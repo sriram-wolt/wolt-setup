@@ -6,13 +6,12 @@
 ## Build system and JDK
 
 ```zsh
-% brew install gradle@6 # This will install openjdk@11 as a dependency
+% brew install gradle
 
-# For the system Java wrappers to find this JDK, symlink it with
-% sudo ln -sfn $(brew --prefix)/opt/openjdk@11/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-11.jdk
+% brew install --cask corretto
 
 # Add the following to your .zshrc
-export JAVA_HOME=$(/usr/libexec/java_home -v11)
+export JAVA_HOME=$(/usr/libexec/java_home)
 ```
 
 ## Browsers
@@ -38,7 +37,7 @@ Choose your favourite(s) or something else
 ## Other required casks
 
 ```zsh
-% brew install --cask intellij-idea # Not required if you don't use IntelliJ IDEA
+% brew install --cask intellij-idea # Or your choice of IDE
 % brew install --cask slack
 % brew install --cask zoom
 % brew install --cask wkhtmltopdf   # Required for fax
@@ -67,6 +66,7 @@ export GPG_TTY=$(tty)
 ```zsh
 % brew install tree
 % brew install z
+% brew install wget
 ```
 
 ## Command completion
